@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.markdwon{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.markdwon .container{
+  width: 60%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  box-shadow: 0 0 1.5rem rgb(128, 134, 134);
+}
+
+.markdwon .container .left_site{
+  background: rgb(67, 68, 68);
+  resize: none;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  color: white;
+}
+
+.markdwon .container .right_site{
+  background: rgb(169, 242, 245);
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+}
