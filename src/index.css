@@ -27,6 +27,7 @@ body{
   display: grid;
   grid-template-columns: repeat(2 , 1fr);
   box-shadow: 0 0 1.5rem rgb(128, 134, 134);
+  border-radius: 10px;
 }
 
 .markdwon .container .left_site{
@@ -38,6 +39,12 @@ body{
   font-weight: 600;
   letter-spacing: .1rem;
   color: white;
+  border-radius: 3px 0 0 3px;
+}
+
+.markdwon .container .left_site:focus{
+  border: none;
+  outline: none;
 }
 
 .markdwon .container .right_site{
@@ -46,4 +53,20 @@ body{
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: .1rem;
+  border-radius: 0 3px 3px 0;
+}
+
+@media (max-width:640px) {
+  .markdwon .container{
+    width: 80%;
+    grid-template-columns: repeat(1 , 1fr);
+  }
+
+  .markdwon .container .left_site{
+    border-radius: 3px 3px 0 0;
+  }
+
+  .markdwon .container .right_site{
+    border-radius: 0 0 3px 3px;
+  }
 }
